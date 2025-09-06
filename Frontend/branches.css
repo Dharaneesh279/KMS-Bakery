@@ -1,0 +1,308 @@
+@font-face {
+        font-family: '28 Days Later';
+        src: url(../fonts/28-days-later/28\ Days\ Later.ttf);
+}
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SF-Pro-Display-Regular.woff2) format("woff2"),
+       url(../fonts/SF-Pro-Display-Regular.woff) format("woff"),
+       url(../fonts/SF-Pro-Display-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
+       url("../fonts/SF-Pro-Display-Bold.woff") format("woff"),
+       url("../fonts/SF-Pro-Display-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+        font-family: 'Helvetica Oblique';
+        src: url(../fonts/helvetica-255-webfont/Helvetica-Oblique.woff);
+}
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background:#462A11 ;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 80% 42%, 19% 42%, 0 60%);
+    box-shadow: 10px 20px #ebc9ad ;
+}
+.rectangle{
+    position: absolute;
+    top:5.5%;
+    left: 49.5%;
+    transform: translate(-50%,-50%);
+    width: 425px;
+    height: 150px;
+    background: #462A11 ;
+    border-radius: 17px;
+    
+}
+.logo{
+    position: relative;
+    height: 152px;
+    width: 152px;
+    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left:44.5%;
+    top:25px;
+    zoom:88%;
+}
+
+.navbar{
+    position: absolute;
+    background-color: #462A11;
+    width: 49%;
+    height: 47px ;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding:2px 50px;
+    top:34.5%;
+    left:22%;
+    font-size: 17px;
+}
+.navbar:before {
+        content: ' ';
+        display: block;
+        background: #462A11;
+        width: 20px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        transform: skew(10deg);
+        border-radius: 8px;
+        z-index: -1;
+      }
+.navbar:after {
+        content: ' ';
+        display: block;
+        background: #462A11;
+        width: 20px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -10px;
+        transform: skew(-10deg);
+        border-radius: 8px;
+        z-index: -1;
+      }
+a{
+    font-family: '28 Days Later';
+    text-decoration: none;
+    color: #E2C8B0;
+}
+.head-office{
+    position: relative;
+    font-family: "28 Days Later";
+    font-size:450%;
+    display: flex;
+    justify-content: center;
+    padding-top:14.7%;
+    margin-bottom: 100px;
+
+}
+.head{
+    margin-right: 1.9rem;
+}
+/* From Uiverse.io by 0xnihilism */ 
+.card1{
+  position: relative;
+  width: 87.9%;
+  height:325px;
+  padding: 20px;
+  background: #EFE2B9;
+  transition: transform .3s;
+  border-radius: 18px ;
+  margin-left: 3.4%;
+  margin-bottom: 8%;
+
+}
+
+
+.card1__title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-size: 55px;
+  font-weight: 700;
+  color: #000;
+  margin-left:15px ;
+  margin-top: 29px;
+  display: inline-block;
+  position: relative;
+}
+
+
+.card1__content {
+  font-family: 'Abhaya Libre', sans-serif;
+  font-style: normal;
+  font-weight: 580;
+  font-size: 32px;
+  color: #000;
+  padding-left: 16px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
+.card1:hover {
+  -ms-transform: scale(1.03); 
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03); 
+}
+.map-contact{
+    display: flex;
+    gap:13px;
+}
+.map{
+    position: relative;
+    width: 140px;
+    height: 39px;
+    background:#462A11 ;
+    border-radius: 10px;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    color: #ffffff;
+    cursor: pointer;
+}
+.map-icon{
+  margin-right:5px ;
+}
+.map>p{
+  padding-right:10px;
+}
+.contact{
+    position: relative;
+    width: 140px;
+    height: 39px;
+    background:#462A11 ;
+    border-radius: 10px;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left:10px;
+    
+}
+.call-icon{
+  padding-right: 12px;
+}
+.other-branches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 116px;
+    font-size: 520%;
+    font-family: '28 Days Later';
+    flex-direction: column;
+}
+.branches{
+    border-top-style:solid;
+}
+.other-branches .branches {
+    display: block;
+}
+
+/*-----------------This is the foooter style for all the pages------------------*/
+.footer {
+  position: relative; 
+  background: 
+    url(../Images/footer-bg-edited.png) center/cover no-repeat,
+    #211409;
+  background-blend-mode: overlay;
+  color: #fff;
+  height: 400px;
+  padding: 40px 20px;
+  font-family: 'SF Pro Display', sans-serif;
+  margin-top: 13%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-left: 20%;
+  margin-top: 3.5%;
+}
+
+.footer-logo {
+  background: url(../Images/Logo-img.JPG) no-repeat center;
+  background-size: cover;   
+  width: 175px;
+  height: 175px;
+  position: absolute;   
+  top: -115px;          
+  left: 40px;          
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 1;
+}
+
+.footer-column {
+  min-width: 180px;
+}
+
+
+.footer-column h3 {
+  font-size: 30px;
+  font-family: '28 Days Later', sans-serif ;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f3e0d6; /* Light beige */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: 'Helvetica Oblique', sans-serif;
+
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f0c674;
+}
+

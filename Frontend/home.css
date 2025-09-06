@@ -1,0 +1,91 @@
+@font-face {
+        font-family: '28 Days Later';
+        src: url(../fonts/28-days-later/28\ Days\ Later.ttf);
+}
+
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background:#462A11 ;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 80% 42%, 19% 42%, 0 60%);
+    box-shadow: 10px 20px #ebc9ad ;
+}
+.rectangle{
+    position: absolute;
+    top:5.5%;
+    left: 49.5%;
+    transform: translate(-50%,-50%);
+    width: 425px;
+    height: 150px;
+    background: #462A11 ;
+    border-radius: 17px;
+    
+}
+.logo{
+    position: relative;
+    height: 152px;
+    width: 152px;
+    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left:44.5%;
+    top:25px;
+    zoom:88%;
+}
+
+.navbar{
+    position: absolute;
+    background-color: #462A11;
+    width: 49%;
+    height: 47px ;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding:2px 50px;
+    top:34.5%;
+    left:22%;
+    font-size: 17px;
+}
+.navbar:before {
+        content: ' ';
+        display: block;
+        background: #462A11;
+        width: 20px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        transform: skew(10deg);
+        border-radius: 8px;
+        z-index: -1;
+      }
+.navbar:after {
+        content: ' ';
+        display: block;
+        background: #462A11;
+        width: 20px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -10px;
+        transform: skew(-10deg);
+        border-radius: 8px;
+        z-index: -1;
+      }
+a{
+    font-family: '28 Days Later';
+    text-decoration: none;
+    color: #E2C8B0;
+}
+
+/*-----------------This is the header section style for all the pages------------------*/
