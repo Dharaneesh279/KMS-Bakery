@@ -29,12 +29,13 @@ body{
     top:5.5%;
     left: 49.5%;
     transform: translate(-50%,-50%);
-    width: 425px;
+    width: 425px; 
     height: 150px;
     background: #462A11 ;
     border-radius: 17px;
     
 }
+
 .logo{
     position: relative;
     height: 152px;
@@ -127,50 +128,36 @@ a{
 }
 
 /*-----------------This is the items style for all the pages------------------*/
-.parent-1 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
+.parent-1, .parent-2, .parent-3{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center; 
+    gap: 110px;    
+    margin-bottom: 50px;        
 }
-    
-.card1 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
+
+.card1, .card2, .card3,.card4, .card5, .card6,.card7, .card8, .card9{
     height: 290px;
     width: 287px;
+    border-radius: 7px;
+    background-color: #EFE2B9;
+    position: relative;
+}
+
+
+.card1 {
     background: url(../Images/Black\ forest.png) no-repeat center;
     background-size: 60%;
     background-position: 55px -85px;
-    position: relative;
-    background-color: #EFE2B9;
-    border-radius: 7px;
 }
 
-.card2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
+.card2 , .card5,.card8{
     border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
+    margin-top: 200px; 
 }
 
 .card3 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
     border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
 }
       
 .foot {
@@ -190,91 +177,6 @@ a{
     padding:0;
 }      
         
-.parent-2 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
-}
-    
-.card4 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-.card5 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
-    border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
-}
-
-.card6 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-           
-.parent-3 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
-}
-    
-.card7 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-.card8 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
-    border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
-}
-
-.card9 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
 
 
 /*-----------------This is the foooter style for all the pages------------------*/

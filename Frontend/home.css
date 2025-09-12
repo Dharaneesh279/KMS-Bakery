@@ -48,9 +48,9 @@ body{
     width: 49%;
     height: 47px ;
     display: flex;
-    gap: 80px;
     justify-content: center;
     align-items: center;
+    gap:80px;
     padding:2px 50px;
     top:34.5%;
     left:22%;
@@ -89,3 +89,40 @@ a{
 }
 
 /*-----------------This is the header section style for all the pages------------------*/
+
+
+.title-1{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: '28 Days Later';
+    font-size: 40px;
+    color: #000000 ;
+}
+
+.title-2{
+    position: absolute;
+    top: 62%;
+    left: 20%;
+    margin-top: 20px;
+    font-family: '28 Days Later';
+    font-size: 12px;
+    color: #000000 ;
+    font-weight: normal;
+    word-spacing: 2px;
+    width: 60%;
+    text-align: center;
+}
+
+.items-explore{
+    position: absolute;
+    top: 72%;
+    font-family: '28 Days Later';
+    font-size: 20px;
+    color: #000000 ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+
+}
