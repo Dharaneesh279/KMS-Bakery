@@ -54,13 +54,13 @@ body{
     width: 49%;
     height: 47px ;
     display: flex;
-    gap: 80px;
     justify-content: center;
     align-items: center;
+    gap:75px;
     padding:2px 50px;
     top:34.5%;
     left:22%;
-    font-size: 17px;
+    font-size: 1.4vw;
 }
 .navbar:before {
         content: ' ';
@@ -90,6 +90,7 @@ body{
       }
 a{
     font-family: '28 Days Later';
+    display: flex;
     text-decoration: none;
     color: #E2C8B0;
 }
@@ -147,6 +148,7 @@ a{
 
 .card1 {
     background: url(../Images/Black\ forest.png) no-repeat center;
+    background-color: #EFE2B9;
     background-size: 60%;
     background-position: 55px -85px;
 }
@@ -258,4 +260,56 @@ a{
 
 .footer-column ul li a:hover {
   color: #f0c674;
+}
+
+/* Standard mobile */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .navbar{
+    display: flex;
+    gap:50px;
+    font-size: 2.4vw;
+
+  }
+  .cakes-title{
+    height:60px;
+    width:230px;
+  }
+  .cakes-logo{
+    height:90px;
+    width: 90px;
+  }
+  .card2 , .card5,.card8{
+    border-radius: 8px;
+    margin-top: 0%;
+  }
+  .card9{
+    margin-bottom: 40%;
+  }
+  .footer{
+    height: 850px;
+    max-width: 600px;
+  }
+  .footer-container{
+    flex-wrap: wrap;
+  }
+}
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .navbar{
+    gap:45px;
+    font-size:1.9vw;
+  }
+  .cakes-logo{
+    transform: translate(5%,-80%);
+  }
+  .footer-container{
+    flex-wrap:wrap;
+  }
+  .card9{
+    margin-bottom: 40%;
+  }
+  .footer {
+    height: 600px;
+    max-width: 1024px;
+  }
 }
