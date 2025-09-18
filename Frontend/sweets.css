@@ -362,7 +362,7 @@ a{
 }
 
 
-.card {
+/* .card {
   width: 200px;
   height: 250px;
   margin: 1rem auto;
@@ -402,7 +402,7 @@ a{
 .card-back {
   border: 1px solid #e5e7eb;
   transform: rotateY(180deg);
-}
+} */
 
 /*-----------------This is the foooter style for all the pages------------------*/
 .footer {

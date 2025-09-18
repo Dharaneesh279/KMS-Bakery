@@ -262,54 +262,41 @@ a{
   color: #f0c674;
 }
 
-/* Standard mobile */
-@media screen and (min-width: 320px) and (max-width: 600px) {
-  .navbar{
-    display: flex;
-    gap:50px;
-    font-size: 2.4vw;
+/* ========== Tablet Screens (768px – 1024px) ========== */
+@media (min-width: 768px) and (max-width: 1080px) {
+  .parent-1, .parent-2, .parent-3 {
+    gap: 60px; 
+  }
 
+  .card1, .card2, .card3, .card4, .card5, 
+  .card6, .card7, .card8, .card9 {
+    width: 220px;
+    height: 250px;
+    background-size: 65%;
+    background-position: center -50px;
   }
-  .cakes-title{
-    height:60px;
-    width:230px;
+
+  .navbar {
+    font-size: 1.7vw; 
+    gap: 40px;
   }
-  .cakes-logo{
-    height:90px;
-    width: 90px;
+
+  .cakes-title {
+    font-size: 20px;
+    width: 260px;
   }
-  .card2 , .card5,.card8{
-    border-radius: 8px;
-    margin-top: 0%;
+
+  .cakes-logo {
+    transform: translate(20%,-70%);
+    height: 120px;
+    width: 120px;
   }
-  .card9{
-    margin-bottom: 40%;
-  }
-  .footer{
-    height: 850px;
-    max-width: 600px;
-  }
-  .footer-container{
-    flex-wrap: wrap;
-  }
-}
-/* Tablets */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .navbar{
-    gap:45px;
-    font-size:1.9vw;
-  }
-  .cakes-logo{
-    transform: translate(5%,-80%);
-  }
-  .footer-container{
-    flex-wrap:wrap;
-  }
-  .card9{
-    margin-bottom: 40%;
+
+  .foot {
+    font-size: 24px;
   }
   .footer {
-    height: 600px;
-    max-width: 1024px;
+    height: auto;
+    padding: 30px 20px;
   }
 }
