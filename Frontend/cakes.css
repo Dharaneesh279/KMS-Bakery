@@ -33,7 +33,6 @@ body{
     height: 150px;
     background: #462A11 ;
     border-radius: 17px;
-    
 }
 
 .logo{
@@ -60,7 +59,7 @@ body{
     padding:2px 50px;
     top:34.5%;
     left:22%;
-    font-size: 1.4vw;
+    font-size: 1.1rem;
 }
 .navbar:before {
         content: ' ';
@@ -108,6 +107,7 @@ a{
     width: 330px;
     border-radius: 15px;
     margin-top: 240px;
+    margin-bottom: 140px;
 }
 .cakes-title h1{
     text-align: center;
@@ -122,28 +122,41 @@ a{
     width: 150px;
     background-repeat: no-repeat;
     background-size: contain;
+
 }
 .cakes-logo img{
     height: 150px;
     width: 200px;
+    position: relative;
+    right:140%;
+    top:-15%;
 }
 
 /*-----------------This is the items style for all the pages------------------*/
-.parent-1, .parent-2, .parent-3{
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: center; 
-    gap: 110px;    
-    margin-bottom: 50px;        
+.parent-1, .parent-2, .parent-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 110px;    
+  margin-bottom: 300px;
+}
+.parent-3{
+  margin-bottom: 300px;
 }
 
-.card1, .card2, .card3,.card4, .card5, .card6,.card7, .card8, .card9{
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
+.card1, .card2, .card3, .card4, .card5, 
+.card6, .card7, .card8, .card9 {
+  flex: 1 1 287px; 
+  aspect-ratio: 287 / 290;  
+  max-width: 300px;
+  min-width: 220px;
+  border-radius: 7px;
+  background-color: #EFE2B9;
+  position: relative;
+  background-size: 60%;
+  background-position: center -50px;
 }
+
 
 
 .card1 {
@@ -154,8 +167,8 @@ a{
 }
 
 .card2 , .card5,.card8{
-    border-radius: 8px;
-    margin-top: 200px; 
+  position: relative;
+  top:200px;
 }
 
 .card3 {
@@ -167,7 +180,7 @@ a{
     height: 60px;
     font-size: 29px;
     font-family: 'Kenyan Coffee Rg',sans-serif;
-    top:72.5%;
+    top:73.5%;
     background-color: #462A11;
     border-radius: 8px;
     color: white;
@@ -263,40 +276,53 @@ a{
 }
 
 /* ========== Tablet Screens (768px – 1024px) ========== */
-@media (min-width: 768px) and (max-width: 1080px) {
+@media (min-width: 780px) and (max-width: 1080px) {
+  .header {
+    height: 10em;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 80% 47%, 19% 47%, 0 65%);
+  }
   .parent-1, .parent-2, .parent-3 {
-    gap: 60px; 
+    gap: 60px;  /* tighter spacing */
   }
 
   .card1, .card2, .card3, .card4, .card5, 
   .card6, .card7, .card8, .card9 {
-    width: 220px;
-    height: 250px;
+    flex: 1 1 220px;        /* smaller base size */
+    aspect-ratio: 220 / 250;
+    max-width: 240px;
+    min-width: 180px;
     background-size: 65%;
     background-position: center -50px;
   }
-
   .navbar {
-    font-size: 1.7vw; 
-    gap: 40px;
+    top:35%;
+    font-size: 1.8vw; 
+    gap: 60px;
   }
 
   .cakes-title {
-    font-size: 20px;
-    width: 260px;
+    font-size: 22px;
+    width: 30%;
+    height:65px;
   }
 
   .cakes-logo {
-    transform: translate(20%,-70%);
+    transform: translate(10%,-100%);
     height: 120px;
     width: 120px;
+  }
+  .cakes-logo img{
+    height: 120%;
+    width: 150%;
+    margin-right: 50px;
+    position: relative;
   }
 
   .foot {
     font-size: 24px;
   }
   .footer {
-    height: auto;
+    height: 500px;
     padding: 30px 20px;
   }
 }
