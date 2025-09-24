@@ -1,128 +1,477 @@
 @font-face {
-        font-family: '28 Days Later';
-        src: url(../fonts/28-days-later/28\ Days\ Later.ttf);
+    font-family: '28 Days Later';
+    src: url(../fonts/28-days-later/28\ Days\ Later.ttf);
 }
-
-body{
-    margin:0;
+@font-face {
+    font-family: 'Gobold Uplow Italic';
+    src: url(../fonts/gobold-webfont/Gobold\ Uplow\ Italic.woff);
+}
+@font-face {
+    font-family: 'Gobold Uplow CUTS';
+    src: url(../fonts/gobold-webfont/Gobold\ CUTS.woff);
+}
+@font-face {
+    font-family: 'Brilliantte';
+    src: url(../fonts/brilliantte/Brilliantte\ Personal\ Use\ Only.otf);
+}
+body {
+    margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-
 }
 
-.header{
+/* ---------------- HEADER ---------------- */
+.header {
     position: absolute;
     width: 100%;
     height: 200px;
-    background:#462A11 ;
+    background: #462A11;
     clip-path: polygon(0 0, 100% 0, 100% 60%, 80% 42%, 19% 42%, 0 60%);
-    box-shadow: 10px 20px #ebc9ad ;
+    box-shadow: 10px 20px #ebc9ad;
 }
-.rectangle{
+
+.rectangle {
     position: absolute;
-    top:5.5%;
+    top: 5.5%;
     left: 49.5%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 425px;
     height: 150px;
-    background: #462A11 ;
+    background: #462A11;
     border-radius: 17px;
-    
 }
-.logo{
+
+.logo {
     position: relative;
     height: 152px;
     width: 152px;
-    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    background-image: url(../Images/KMS\ Bakery\ LOGO.png);
     background-repeat: no-repeat;
     background-size: contain;
-    left:44.5%;
-    top:25px;
-    zoom:88%;
+    left: 44.5%;
+    top: 25px;
+    zoom: 88%;
 }
 
-.navbar{
+.navbar {
     position: absolute;
     background-color: #462A11;
     width: 49%;
-    height: 47px ;
+    height: 47px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:80px;
-    padding:2px 50px;
-    top:34.5%;
-    left:22%;
+    gap: 80px;
+    padding: 2px 50px;
+    top: 34.5%;
+    left: 22%;
     font-size: 17px;
 }
 .navbar:before {
-        content: ' ';
-        display: block;
-        background: #462A11;
-        width: 20px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: -10px;
-        transform: skew(10deg);
-        border-radius: 8px;
-        z-index: -1;
-      }
+    content: ' ';
+    display: block;
+    background: #462A11;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    transform: skew(10deg);
+    border-radius: 8px;
+    z-index: -1;
+}
 .navbar:after {
-        content: ' ';
-        display: block;
-        background: #462A11;
-        width: 20px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: -10px;
-        transform: skew(-10deg);
-        border-radius: 8px;
-        z-index: -1;
-      }
-a{
+    content: ' ';
+    display: block;
+    background: #462A11;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    transform: skew(-10deg);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+a {
     font-family: '28 Days Later';
     text-decoration: none;
     color: #E2C8B0;
 }
 
-/*-----------------This is the header section style for all the pages------------------*/
-
-
-.title-1{
+/* ---------------- TITLE ---------------- */
+.title-1 {
     position: absolute;
-    top: 55%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
     font-family: '28 Days Later';
     font-size: 40px;
-    color: #000000 ;
+    color: #000000;
 }
 
-.title-2{
+.title-2 {
     position: absolute;
-    top: 62%;
     left: 20%;
-    margin-top: 20px;
+    margin-top: 80px;
     font-family: '28 Days Later';
     font-size: 12px;
-    color: #000000 ;
+    color: #000000;
     font-weight: normal;
     word-spacing: 2px;
     width: 60%;
     text-align: center;
 }
 
-.items-explore{
-    position: absolute;
-    top: 72%;
-    font-family: '28 Days Later';
-    font-size: 20px;
-    color: #000000 ;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: flex;
+/* ---------------- IMAGE ANIMATION ---------------- */
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
 
+.pic-ctn {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rectangle2 {
+    width: 100%;
+    height: 350px;
+    background: #EFE2B9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.square {
+    width: 450px;
+    height: 450px;
+    background: #EFE2B9;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.pic-ctn > img {
+    position: absolute;
+    opacity: 0;
+    animation: display 10s infinite;
+    margin-top: 8%;
+    width: 250px;
+    height: 350px;
+}
+.pic-ctn img:nth-child(2) { animation-delay: 2s; }
+.pic-ctn img:nth-child(3) { animation-delay: 4s; }
+.pic-ctn img:nth-child(4) { animation-delay: 6s; }
+.pic-ctn img:nth-child(5) { animation-delay: 8s; }
+
+.sentence1 {
+    position: absolute;
+    top:165px;
+    left:50px;
+    font-family: 'Gobold Uplow Italic';
+    font-size:1.3rem;
+    color: #462A11;
+}
+
+.sentence2 {
+    position: absolute;
+    top: 130px;
+    right:60px;
+    font-family: 'Gobold Uplow Italic';
+    font-size: 1.3rem;
+    text-align: right;
+    color: #000000;
+}
+
+/* ---------------- NEXT SECTION ---------------- */
+.items-explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:200px;
+    min-height: 350px;
+    margin-top: 150px; /* pushes below pic-ctn */
+    background-color: #EFE2B9;
+    font-family: '28 Days Later';
+    font-size: 12px;
+    color: #000000;
+    position: relative; 
+}
+
+.items-explore div {
+    text-align: center;
+    padding: 20px;
+    flex: 1; 
+}
+
+.items-explore div img {
+    margin: 25px;
+    width: 100%;
+}
+
+.items-explore div h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: normal;
+    background-color: #462A11;
+    color: #E2C8B0;
+    padding: 7px;
+    border-radius: 5px;
+    width: 90px;
+}
+
+.items-explore div svg {
+  height:20px;
+  width:30px;
+  vertical-align: middle;
+}
+
+.signature-ingrediants {
+    position: relative;
+    margin-top: 110px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 70px;
+    font-family: '28 Days Later';
+}
+.sentence3{
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    font-family: '28 Days Later';
+}
+
+/* ----------------------Image slices container --------------------------------*/
+.image-slice-container-1 , .image-slice-container-2 , .image-slice-container-3 {
+  width: 100%;
+  display: flex;
+  gap: 3em; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.slice {
+  width: 250px;      
+  height: 700px;      
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.image-slice-container-1{
+  .slice:nth-child(1) {background-image: url(../Images/Rectangle-1.png);
+   background-position: 0 0; margin-top: 10%; }
+.slice:nth-child(2) { background-image: url(../Images/Rectangle-1.png);
+  background-position: 0 0; margin-bottom: 0%;}
+.slice:nth-child(3) { background-image: url(../Images/Rectangle-1.png);
+ background-position: 0 0; margin-bottom: 0%; }
+.slice:nth-child(4) { background-image: url(../Images/Rectangle-1.png);
+  background-position: 0 0; margin-top: 10%; }
+}
+
+.image-slice-container-2{
+  .slice:nth-child(1) {background-image: url(../Images/Rectangle-2.png);
+   background-position: 0 0; margin-top: 10%; }
+.slice:nth-child(2) { background-image: url(../Images/Rectangle-2.png);
+  background-position: 0 0; margin-bottom: 0%;}
+.slice:nth-child(3) { background-image: url(../Images/Rectangle-2.png);
+ background-position: 0 0; margin-bottom: 0%; }
+.slice:nth-child(4) { background-image: url(../Images/Rectangle-2.png);
+  background-position: 0 0; margin-top: 10%; }
+}
+
+.image-slice-container-3{
+  .slice:nth-child(1) {background-image: url(../Images/Rectangle-3.png);
+   background-position: 0 0; margin-top: 10%; }
+.slice:nth-child(2) { background-image: url(../Images/Rectangle-3.png);
+  background-position: 0 0; margin-bottom: 0%;}
+.slice:nth-child(3) { background-image: url(../Images/Rectangle-3.png);
+ background-position: 0 0; margin-bottom: 0%; }
+.slice:nth-child(4) { background-image: url(../Images/Rectangle-3.png);
+  background-position: 0 0; margin-top: 10%; }
+}
+
+
+.title {
+  font-family: 'Brilliantte';
+  font-size:4.5rem;
+  text-align: center;
+  color: #6B431F;
+  margin: 0;
+}
+
+.description {
+  position: relative;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Gobold Uplow CUTS';
+  margin: auto;
+  color: #27190C;
+  line-height: 1.5;
+}
+
+.variety-others{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 116px;
+    font-size: 2.2rem;
+    font-family: '28 Days Later';
+    flex-direction: column;
+}
+.variety{
+    border-bottom-style:solid;
+    font-size: 3rem;
+}
+.others{
+    font-size: 5rem;
+    margin-left: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;  
+  gap: 7em;                
+  margin: 50px auto;
+}
+
+.card {
+  background: #f6e6b8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;  
+  height: 250px;   
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.card-title {
+  background: #4a2c14;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
+}
+
+
+/*-----------------This is the foooter style for all the pages------------------*/
+.footer {
+  position: relative; 
+  background: 
+    url(../Images/footer-bg-edited.png) center/cover no-repeat,
+    #211409;
+  background-blend-mode: overlay;
+  color: #fff;
+  height: 400px;
+  padding: 40px 20px;
+  font-family: 'SF Pro Display', sans-serif;
+  margin-top: 13%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-left: 20%;
+  margin-top: 3.5%;
+}
+
+.footer-logo {
+  background: url(../Images/Logo-img.JPG) no-repeat center;
+  background-size: cover;   
+  width: 175px;
+  height: 175px;
+  position: absolute;   
+  top: -115px;          
+  left: 40px;          
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 1;
+}
+
+.footer-column {
+  min-width: 180px;
+}
+
+
+.footer-column h3 {
+  font-size: 30px;
+  font-family: '28 Days Later', sans-serif ;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f3e0d6; /* Light beige */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: 'Helvetica Oblique', sans-serif;
+
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f0c674;
 }
