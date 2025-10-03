@@ -63,14 +63,14 @@ body{
     position: absolute;
     background-color: #462A11;
     width: 49%;
-    height: 47px ;
+    height: 47px;
     display: flex;
-    gap: 80px;
     justify-content: center;
     align-items: center;
-    padding:2px 50px;
-    top:34.5%;
-    left:22%;
+    gap: 80px;
+    padding: 2px 50px;
+    left: 22%;
+    margin-top:90px;
     font-size: 17px;
 }
 .navbar:before {
@@ -234,7 +234,7 @@ a{
     #211409;
   background-blend-mode: overlay;
   color: #fff;
-  height: 400px;
+  height: 30em;
   padding: 40px 20px;
   font-family: 'SF Pro Display', sans-serif;
   margin-top: 13%;
@@ -307,3 +307,15 @@ a{
   color: #f0c674;
 }
 
+@media (min-width: 768px) and (max-width: 1080px){
+  .head-office{
+    margin-top:80px ;
+    font-size:350%;
+  }
+  .card1{
+    height:20em;
+  }
+  .footer{
+    margin-top:20%;
+  }
+}

@@ -57,7 +57,7 @@ body{
     justify-content: center;
     align-items: center;
     padding:2px 50px;
-    top:34.5%;
+    margin-top:90px;
     left:22%;
     font-size: 17px;
 }
@@ -127,282 +127,61 @@ a{
 }
 
 /*-----------------This is the items style for all the pages------------------*/
-.parent-1 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
-}
-    
-.card1 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
-    height: 290px;
-    width: 287px;
-    background: url(../Images/special_laddu.webp) no-repeat center;
-    background-size: 100%;
-    background-position: 0.1px -44px;
-    position: relative;
-    background-color: #EFE2B9;
-    border-radius: 7px;
-}
-
-.card2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
-    border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
-}
-
-.card3 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-      
-.foot {
-    position: relative;
-    height: 60px;
-    font-size: 29px;
-    font-family: 'Kenyan Coffee Rg',sans-serif;
-    top:72.5%;
-    background-color: #462A11;
-    border-radius: 8px;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-.foot p{
-    margin: 15px;
-    padding:0;
-}      
-        
-.parent-2 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
-}
-    
-.card4 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-.card5 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
-    border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
-}
-
-.card6 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-           
-.parent-3 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
-}
-    
-.card7 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-.card8 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
-    border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
-}
-
-.card9 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-.parent-4 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
-}
-    
-.card10{
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-.card11 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
-    border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
-}
-
-.card12 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-.parent-5 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 110px;
-}
-    
-.card13 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 2;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-.card14 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    height: 290px;
-    width: 287px;
-    border-radius: 8px;
-    background-color: #EFE2B9;
-    position: relative;
-    top:-10%;
-}
-
-.card15 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    height: 290px;
-    width: 287px;
-    border-radius: 7px;
-    background-color: #EFE2B9;
-    position: relative;
-}
-
-
-/* .card {
-  width: 200px;
-  height: 250px;
-  margin: 1rem auto;
-  perspective: 1000px;
-  cursor: pointer;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+/* Parent containers → Flex layout */
+.parent-1, .parent-2, .parent-3, .parent-4, .parent-5 {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  border-radius: 0.5rem;
+  gap: 110px;    
+  margin-bottom: 300px;
 }
 
-.card-front {
-  background: white;
-  border: 1px solid #e5e7eb;
+/* Common card styles */
+.card1, .card2, .card3, .card4, .card5, 
+.card6, .card7, .card8, .card9, .card10,
+.card11, .card12, .card13, .card14, .card15 {
+  flex: 1 1 287px; 
+  aspect-ratio: 287 / 290;  
+  max-width: 300px;
+  min-width: 220px;
+  height: 290px;
+  width: 287px;
+  border-radius: 7px;
+  background-color: #EFE2B9;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+}
+.card10 .foot{
+  font-size: 1.4em;
+}
+/* Foot styling (same for all cards) */
+.foot {
+  position: relative;
+  height: 60px;
+  font-size: 29px;
+  font-family: 'Kenyan Coffee Rg', sans-serif;
+  top: 72.5%;
+  background-color: #462A11;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.foot p {
+  margin: 15px;
+  padding: 0;
+}
+.card1 {
+  background: url(../Images/special_laddu.webp) no-repeat center;
+  background-size: 100%;
+  background-position: 0.1px -44px;
+}
+.card2, .card5, .card8, .card11, .card14 {
+  position: relative;
+  top: 200px;
 }
 
-.card-back {
-  border: 1px solid #e5e7eb;
-  transform: rotateY(180deg);
-} */
 
 /*-----------------This is the foooter style for all the pages------------------*/
 .footer {
@@ -412,7 +191,7 @@ a{
     #211409;
   background-blend-mode: overlay;
   color: #fff;
-  height: 400px;
+  height: 30em;
   padding: 40px 20px;
   font-family: 'SF Pro Display', sans-serif;
   margin-top: 13%;
@@ -483,4 +262,63 @@ a{
 
 .footer-column ul li a:hover {
   color: #f0c674;
+}
+
+/* ========== Tablet Screens (768px – 1024px) ========== */
+@media (min-width: 768px) and (max-width: 1080px) {
+  .header {
+    height: 10em;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 80% 47%, 19% 47%, 0 65%);
+  }
+  .navbar{
+    margin-top: 2em;
+  }
+  .parent-1, .parent-2, .parent-3, .parent-4, .parent-5{
+    gap: 2.3em;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, 
+  .card6, .card7, .card8, .card9 , .card10, .card11, .card12, .card13, .card14, .card15 {
+    flex: 1 1 220px; 
+    aspect-ratio: 210 / 240;
+    max-width: 220px;
+    min-width: 180px;
+    background-size: 65%;
+    max-height:240px;
+    background-position: center -50px;
+  }
+  .navbar {
+    top:35%;
+    font-size: 1.8vw; 
+    gap: 60px;
+  }
+
+  .sweets-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    width: 30%;
+    height:65px;
+  }
+
+  .sweets-logo {
+    position: relative;
+    margin-right:20px;
+    transform: translate(10%,-80%);
+    height: 120px;
+    width: 120px;
+  }
+  .sweets-logo img{
+    height: 130px;
+    width: 150px;
+    position: relative;
+  }
+  .foot {
+    font-size: 24px;
+  }
+  .footer {
+    height: 500px;
+    padding: 30px 20px;
+  }
 }

@@ -51,15 +51,15 @@ body{
     position: absolute;
     background-color: #462A11;
     width: 49%;
-    height: 47px ;
+    height: 47px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:75px;
-    padding:2px 50px;
-    top:34.5%;
-    left:22%;
-    font-size: 1.1rem;
+    gap: 80px;
+    padding: 2px 50px;
+    left: 22%;
+    margin-top:90px;
+    font-size: 17px;
 }
 .navbar:before {
         content: ' ';
@@ -202,7 +202,7 @@ a{
     #211409;
   background-blend-mode: overlay;
   color: #fff;
-  height: 400px;
+  height: 30em;
   padding: 40px 20px;
   font-family: 'SF Pro Display', sans-serif;
   margin-top: 13%;
@@ -276,22 +276,26 @@ a{
 }
 
 /* ========== Tablet Screens (768px – 1024px) ========== */
-@media (min-width: 780px) and (max-width: 1080px) {
+@media (min-width: 768px) and (max-width: 1080px) {
   .header {
     height: 10em;
     clip-path: polygon(0 0, 100% 0, 100% 65%, 80% 47%, 19% 47%, 0 65%);
   }
+  .navbar{
+    margin-top: 2em;
+  }
   .parent-1, .parent-2, .parent-3 {
-    gap: 60px;  /* tighter spacing */
+    gap: 2.3em;
   }
 
   .card1, .card2, .card3, .card4, .card5, 
   .card6, .card7, .card8, .card9 {
-    flex: 1 1 220px;        /* smaller base size */
-    aspect-ratio: 220 / 250;
-    max-width: 240px;
+    flex: 1 1 220px; 
+    aspect-ratio: 210 / 240;
+    max-width: 220px;
     min-width: 180px;
     background-size: 65%;
+    max-height:240px;
     background-position: center -50px;
   }
   .navbar {
