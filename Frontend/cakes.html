@@ -10,16 +10,54 @@
 <body>
     <div class="header"></div>
     <div class="rectangle"></div>
-    <div class="logo"></div>
-    <div class="navbar">
+    <div class="logo-pc"></div>
+    <!-- Desktop Navbar -->
+    <div class="desktop-navbar">
         <a href="Home.html">HOME</a>
         <a href="About.html">MENU</a>
         <a href="Products.html">BRANCHES</a>
         <a href="Contact.html">CONTACT</a>
     </div>
+    <div
+      onclick="closeMobMenuToggle()"
+      id="mobMenuCont"
+      class="mob-menu-container"
+    >
+      <img class="close-img" src="https://raw.githubusercontent.com/arravind-r/Responsive-HTML5-Navigation-Menu/main/src/close.png" alt="close-icon" />
+    </div>
+    <div id="mobMenuWrap" class="mob-menu-wrap">
+      <div class="menu-content">
+        <div class="menu-items">
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <img src="../Images/KMS Bakery LOGO.png" style="max-width:100px; max-height:100px;" class="logo-mb">
+      <button onclick="mobMenuToggle()" class="menu">Menu</button>
+    </div>
+    <script >var mobMenuContainer = document.getElementById("mobMenuCont");
+var mobMenuWrap = document.getElementById("mobMenuWrap");
+
+function mobMenuToggle() {    
+    mobMenuContainer.classList.add("displayon");
+    mobMenuWrap.classList.add("displayon");
+}
+
+function closeMobMenuToggle() {
+    mobMenuContainer.classList.remove("displayon");
+    mobMenuWrap.classList.remove("displayon");
+}</script>
+
+
 <div class="cakes-title">
     <h1 class="cakes">CAKES</h1>
-    <div class="cakes-logo"><img src="../Images/Cakes-img-Photoroom.png"></div>
+    <div class="cakes-logo"><img class="cakes-logo-img" src="../Images/Cakes-img-Photoroom.png"></div>
 </div>
 
 
