@@ -12,20 +12,102 @@
     <div class="bg"></div>
     <div class="header"></div>
     <div class="rectangle"></div>
-    <div class="logo"></div>
-    <div class="navbar">
-        <a href="Home.html">HOME</a>
-        <a href="About.html">MENU</a>
-        <a href="Products.html">BRANCHES</a>
-        <a href="Contact.html">CONTACT</a>
+    <div class="logo-pc"></div>
+    <!-- Desktop Navbar -->
+  <div class="desktop-navbar">
+    <button onclick="location.href='Home.html'">HOME</button>
+
+  <div class="dropdown">
+    <button class="dropbtn">MENU</button>
+    <div class="dropdown-content">
+      <a>CAKES</a>
+      <a>COOKIES</a>
+      <a>BUN</a>
+      <a>SAVOURIES</a>
+      <a>CHIPS</a>
+      <a>SWEETS</a>
     </div>
+  </div>
+
+  <button onclick="location.href='branches.html'">BRANCHES</button>
+  <button type="button" class="contacts">CONTACT</button>
+  <script>
+    document.querySelector('.contacts').addEventListener('click', () => {
+      const footer = document.querySelector('.footer');
+      if (footer) {
+        footer.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  </script>
+</div>
+    <!-- Overlay -->
+<div onclick="closeMobMenuToggle()" id="mobMenuCont" class="mob-menu-container">
+  <img class="close-img" src="https://raw.githubusercontent.com/arravind-r/Responsive-HTML5-Navigation-Menu/main/src/close.png" alt="close-icon" />
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobMenuWrap" class="mob-menu-wrap">
+  <div class="menu-content">
+    <div class="menu-items">
+      <ul class="nav-menu">
+        <li><a href="#">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="dropdown-mb">
+          <button class="dropbtn-mb" style="color: black;">MENU</button>
+          <div class="dropdown-mb-content">
+            <a href="#">CAKES</a>
+            <a href="#">COOKIES</a>
+            <a href="#">BUN</a>
+            <a href="#">SAVOURIES</a>
+            <a href="#">CHIPS</a>
+            <a href="#">SWEETS</a>
+          </div>
+        </li>
+
+        <li><a href="#">BRANCHES</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="mobile-menu">
+  <img src="../Images/KMS Bakery LOGO.png" style="max-width:100px; max-height:100px;" class="logo-mb">
+  <button onclick="mobMenuToggle()" class="menu"><svg width="45px" height="70px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg></button>
+</div>
+
+<script>
+var mobMenuContainer = document.getElementById("mobMenuCont");
+var mobMenuWrap = document.getElementById("mobMenuWrap");
+
+function mobMenuToggle() {    
+    mobMenuContainer.classList.add("displayon");
+    mobMenuWrap.classList.add("displayon");
+}
+
+function closeMobMenuToggle() {
+    mobMenuContainer.classList.remove("displayon");
+    mobMenuWrap.classList.remove("displayon");
+}
+
+// Dropdown toggle for mobile
+document.querySelectorAll('.dropbtn-mb').forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.parentElement.classList.toggle('active');
+  });
+});
+</script>
     <h1 class="head-office">
         <span class="head" style="color: #A36767;">HEAD </span>
         <span class="office" style="color: #462A11;"> OFFICE</span>
     </h1>
-    <!-- From Uiverse.io by 0xnihilism --> 
-<div class="card1">
-  <span class="card1__title">Sathyamangalam</span>
+<div class="card1 sathy">
+  <span class="card1__title ">Sathyamangalam</span>
   <p class="card1__content">
     D.No.5/474 SATHY MAIN ROAD (KMS </br> 
     Baker),Shenbagapudur,Chinnavani</br> pudur,Sathyamangalam-638402
@@ -49,8 +131,8 @@
   <span class="other" style="color: #A36767;">Other</span>
   <span class="branches" style="color: #462A11;">Branches</span>
 </h1>
-<div class="card1">
-  <span class="card1__title">Karumathampatti</span>
+<div class="card1 karu">
+  <span class="card1__title ">Karumathampatti</span>
   <p class="card1__content">
     Near senniandavar kovi </br> 
     NH Highway covai road</br> Coimbatore-Tamilnadu
@@ -70,8 +152,8 @@
     </div>
 </div>
 </div>
-<div class="card1">
-  <span class="card1__title">Punjai Pulliyamapatti</span>
+<div class="card1 punjai1">
+  <span class="card1__title ">Punjai Pulliyamapatti</span>
   <p class="card1__content">
     Nochikuttai Puliampatti </br> 
     Avinashi road</br> Erode-Tamilnadu
@@ -91,8 +173,8 @@
     </div>
 </div>
 </div>
-<div class="card1">
-  <span class="card1__title">Punjai Pulliyamapatti</span>
+<div class="card1 punjai2">
+  <span class="card1__title ">Punjai Pulliyamapatti</span>
   <p class="card1__content">
     Puliampatti </br> 
     Nal road Coimbatore main road</br> Erode-Tamilnadu
@@ -112,8 +194,8 @@
     </div>
 </div>
 </div>
-<div class="card1">
-  <span class="card1__title">Annur Mettupalayam</span>
+<div class="card1 annur">
+  <span class="card1__title ">Annur Mettupalayam</span>
   <p class="card1__content">
     58/3A Annur Village </br> 
     Sathy road Annur</br> Coimbatore-Tamilnadu
