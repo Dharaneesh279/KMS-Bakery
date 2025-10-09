@@ -10,13 +10,96 @@
 <body>
     <div class="header"></div>
     <div class="rectangle"></div>
-    <div class="logo"></div>
-    <div class="navbar">
-        <a href="Home.html">HOME</a>
-        <a href="About.html">MENU</a>
-        <a href="Products.html">BRANCHES</a>
-        <a href="Contact.html">CONTACT</a>
+    <div class="logo-pc"></div>
+        <!-- Desktop Navbar -->
+    <div class="desktop-navbar">
+  <button onclick="location.href='Home.html'">HOME</button>
+
+  <div class="dropdown">
+    <button class="dropbtn">MENU</button>
+    <div class="dropdown-content">
+      <a>CAKES</a>
+      <a>COOKIES</a>
+      <a>BUN</a>
+      <a>SAVOURIES</a>
+      <a>CHIPS</a>
+      <a>SWEETS</a>
     </div>
+  </div>
+
+  <button onclick="location.href='branches.html'">BRANCHES</button>
+  <button type="button" class="contact">CONTACT</button>
+  <script>
+  document.querySelector('.contact').addEventListener('click', () => {
+    const footer = document.querySelector('.footer');
+    if (footer) {
+      footer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+</script>
+</div>
+    <!-- Overlay -->
+<div onclick="closeMobMenuToggle()" id="mobMenuCont" class="mob-menu-container">
+  <img class="close-img" src="https://raw.githubusercontent.com/arravind-r/Responsive-HTML5-Navigation-Menu/main/src/close.png" alt="close-icon" />
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobMenuWrap" class="mob-menu-wrap">
+  <div class="menu-content">
+    <div class="menu-items">
+      <ul class="nav-menu">
+        <li><a href="#">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="dropdown-mb">
+          <button class="dropbtn-mb" style="color: black;">MENU</button>
+          <div class="dropdown-mb-content">
+            <a href="#">CAKES</a>
+            <a href="#">COOKIES</a>
+            <a href="#">BUN</a>
+            <a href="#">SAVOURIES</a>
+            <a href="#">CHIPS</a>
+            <a href="#">SWEETS</a>
+          </div>
+        </li>
+
+        <li><a href="#">BRANCHES</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="mobile-menu">
+  <img src="../Images/KMS Bakery LOGO.png" style="max-width:100px; max-height:100px;" class="logo-mb">
+  <button onclick="mobMenuToggle()" class="menu"><svg width="45px" height="70px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg></button>
+</div>
+
+<script>
+var mobMenuContainer = document.getElementById("mobMenuCont");
+var mobMenuWrap = document.getElementById("mobMenuWrap");
+
+function mobMenuToggle() {    
+    mobMenuContainer.classList.add("displayon");
+    mobMenuWrap.classList.add("displayon");
+}
+
+function closeMobMenuToggle() {
+    mobMenuContainer.classList.remove("displayon");
+    mobMenuWrap.classList.remove("displayon");
+}
+
+// Dropdown toggle for mobile
+document.querySelectorAll('.dropbtn-mb').forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.parentElement.classList.toggle('active');
+  });
+});
+</script>
     <div class="pic-ctn">
         <div class="rectangle2"></div>
         <div class="square"></div>
@@ -36,7 +119,7 @@
         <div class="cakes">
                 <div class="item1-image"><img src="../Images/Cakes-img-Photoroom.png"></div>
                 <h1 class="explore1">CAKES</h1>
-                <div class="explore"><h2>Explore <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg></h2></div>
+                <div class="explore"><h2 class="text">Explore <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg></h2></div>
         
         </div>
         <div class="sweets">
