@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMS BAKERY</title>
+    <link rel="stylesheet" href="branches.css">
+    <link rel="shortcut icon" href="../Images/KMS Bakery LOGO.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Abhaya+Libre' rel='stylesheet'>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="header"></div>
+    <div class="rectangle"></div>
+    <div class="logo-pc"></div>
+    <!-- Desktop Navbar -->
+  <div class="desktop-navbar">
+    <button onclick="location.href='/'">HOME</button>
+
+  <div class="dropdown">
+    <button class="dropbtn">MENU</button>
+    <div class="dropdown-content">
+      <a href="/cakes">CAKES</a>
+      <a href="/cookies">COOKIES</a>
+      <a href="/bun">BUN</a>
+      <a href="/savouries">SAVOURIES</a>
+      <a href="/chips">CHIPS</a>
+      <a href="/sweets">SWEETS</a>
+    </div>
+  </div>
+
+  <button onclick="location.href='/branches'">BRANCHES</button>
+  <button type="button" class="contacts">CONTACT</button>
+  <script>
+    document.querySelector('.contacts').addEventListener('click', () => {
+      const footer = document.querySelector('.footer');
+      if (footer) {
+        footer.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  </script>
+</div>
+    <!-- Overlay -->
+<div onclick="closeMobMenuToggle()" id="mobMenuCont" class="mob-menu-container">
+  <img class="close-img" src="https://raw.githubusercontent.com/arravind-r/Responsive-HTML5-Navigation-Menu/main/src/close.png" alt="close-icon" />
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobMenuWrap" class="mob-menu-wrap">
+  <div class="menu-content">
+    <div class="menu-items">
+      <ul class="nav-menu">
+        <li><a href="/">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="dropdown-mb">
+          <button class="dropbtn-mb" style="color: black;">MENU</button>
+          <div class="dropdown-mb-content">
+            <a href="/cakes">CAKES</a>
+            <a href="/cookies">COOKIES</a>
+            <a href="/bun">BUN</a>
+            <a href="/savouries">SAVOURIES</a>
+            <a href="/chips">CHIPS</a>
+            <a href="/sweets">SWEETS</a>
+          </div>
+        </li>
+
+        <li><a href="/branches">BRANCHES</a></li>
+        <li><a id="contact" onclick="closeMobMenuToggle()">CONTACT</a></li>
+        <script>
+        document.querySelector('#contact').addEventListener('click', () => {
+          const footer = document.querySelector('.footer');
+          if (footer) {
+            footer.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+        </script>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="mobile-menu">
+  <img src="../Images/KMS Bakery LOGO.png" style="max-width:100px; max-height:100px;" class="logo-mb">
+  <button onclick="mobMenuToggle()" class="menu"><svg width="45px" height="70px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg></button>
+</div>
+
+<script>
+var mobMenuContainer = document.getElementById("mobMenuCont");
+var mobMenuWrap = document.getElementById("mobMenuWrap");
+
+function mobMenuToggle() {    
+    mobMenuContainer.classList.add("displayon");
+    mobMenuWrap.classList.add("displayon");
+    setTimeout(() => {
+        mobMenuWrap.classList.add("active");
+    }, 10);
+}
+
+function closeMobMenuToggle() {
+    mobMenuWrap.classList.remove("active");
+    setTimeout(() => {
+        mobMenuContainer.classList.remove("displayon");
+        mobMenuWrap.classList.remove("displayon");
+    }, 300);
+}
+document.querySelectorAll('.dropbtn-mb').forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.parentElement.classList.toggle('active');
+  });
+});
+</script>
+    <h1 class="head-office">
+        <span class="head" style="color: #A36767;">HEAD </span>
+        <span class="office" style="color: #462A11;"> OFFICE</span>
+    </h1>
+<div class="card1 sathy">
+  <span class="card1__title ">Sathyamangalam</span>
+  <p class="card1__content">
+    D.No.5/474 SATHY MAIN ROAD (KMS </br> 
+    Baker),Shenbagapudur,Chinnavani</br> pudur,Sathyamangalam-638402
+  </p>
+  <div class="map-contact">
+    <div class="map" onclick="window.open('/map/sathyamangalam', '_blank')"><svg width="24" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="map-icon">
+<path d="M12 22C11.7667 22 11.5667 21.9333 11.4 21.8C11.2333 21.6667 11.1083 21.4917 11.025 21.275C10.7083 20.3417 10.3083 19.4667 9.825 18.65C9.35833 17.8333 8.7 16.875 7.85 15.775C7 14.675 6.30833 13.625 5.775 12.625C5.25833 11.625 5 10.4167 5 9C5 7.05 5.675 5.4 7.025 4.05C8.39167 2.68333 10.05 2 12 2C13.95 2 15.6 2.68333 16.95 4.05C18.3167 5.4 19 7.05 19 9C19 10.5167 18.7083 11.7833 18.125 12.8C17.5583 13.8 16.9 14.7917 16.15 15.775C15.25 16.975 14.5667 17.975 14.1 18.775C13.65 19.5583 13.275 20.3917 12.975 21.275C12.8917 21.5083 12.7583 21.6917 12.575 21.825C12.4083 21.9417 12.2167 22 12 22ZM12 11.5C12.7 11.5 13.2917 11.2583 13.775 10.775C14.2583 10.2917 14.5 9.7 14.5 9C14.5 8.3 14.2583 7.70833 13.775 7.225C13.2917 6.74167 12.7 6.5 12 6.5C11.3 6.5 10.7083 6.74167 10.225 7.225C9.74167 7.70833 9.5 8.3 9.5 9C9.5 9.7 9.74167 10.2917 10.225 10.775C10.7083 11.2583 11.3 11.5 12 11.5Z" fill="#FEF7FF"/>
+</svg>
+
+<p> View Map</p>
+    </div>
+    <div class="contact" onclick="window.open('https://wa.me/9361148071?text=Hi', '_blank')">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="call-icon" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+<p>Contact</p>
+    </div>
+</div>
+</div>
+<h1 class="other-branches">
+  <span class="other" style="color: #A36767;">Other</span>
+  <span class="branches" style="color: #462A11;">Branches</span>
+</h1>
+<div class="card1 karu">
+  <span class="card1__title ">Karumathampatti</span>
+  <p class="card1__content">
+    Near senniandavar kovi </br> 
+    NH Highway covai road</br> Coimbatore-Tamilnadu
+  </p>
+    <div class="map-contact">
+    <div class="map"  onclick="window.open('/map/karumathampatti', '_blank')"><svg width="24" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="map-icon">
+<path d="M12 22C11.7667 22 11.5667 21.9333 11.4 21.8C11.2333 21.6667 11.1083 21.4917 11.025 21.275C10.7083 20.3417 10.3083 19.4667 9.825 18.65C9.35833 17.8333 8.7 16.875 7.85 15.775C7 14.675 6.30833 13.625 5.775 12.625C5.25833 11.625 5 10.4167 5 9C5 7.05 5.675 5.4 7.025 4.05C8.39167 2.68333 10.05 2 12 2C13.95 2 15.6 2.68333 16.95 4.05C18.3167 5.4 19 7.05 19 9C19 10.5167 18.7083 11.7833 18.125 12.8C17.5583 13.8 16.9 14.7917 16.15 15.775C15.25 16.975 14.5667 17.975 14.1 18.775C13.65 19.5583 13.275 20.3917 12.975 21.275C12.8917 21.5083 12.7583 21.6917 12.575 21.825C12.4083 21.9417 12.2167 22 12 22ZM12 11.5C12.7 11.5 13.2917 11.2583 13.775 10.775C14.2583 10.2917 14.5 9.7 14.5 9C14.5 8.3 14.2583 7.70833 13.775 7.225C13.2917 6.74167 12.7 6.5 12 6.5C11.3 6.5 10.7083 6.74167 10.225 7.225C9.74167 7.70833 9.5 8.3 9.5 9C9.5 9.7 9.74167 10.2917 10.225 10.775C10.7083 11.2583 11.3 11.5 12 11.5Z" fill="#FEF7FF"/>
+</svg>
+
+<p> View Map</p>
+    </div>
+    <div class="contact" onclick="window.open('https://wa.me/9361148071?text=Hi', '_blank')">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="call-icon" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+<p>Contact</p>
+    </div>
+</div>
+</div>
+<div class="card1 punjai1">
+  <span class="card1__title ">Punjai Pulliyamapatti</span>
+  <p class="card1__content">
+    Nochikuttai Puliampatti </br> 
+    Avinashi road</br> Erode-Tamilnadu
+  </p>
+    <div class="map-contact">
+    <div class="map" onclick="window.open('/map/pulliyamapatti1', '_blank')"><svg width="24" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="map-icon">
+<path d="M12 22C11.7667 22 11.5667 21.9333 11.4 21.8C11.2333 21.6667 11.1083 21.4917 11.025 21.275C10.7083 20.3417 10.3083 19.4667 9.825 18.65C9.35833 17.8333 8.7 16.875 7.85 15.775C7 14.675 6.30833 13.625 5.775 12.625C5.25833 11.625 5 10.4167 5 9C5 7.05 5.675 5.4 7.025 4.05C8.39167 2.68333 10.05 2 12 2C13.95 2 15.6 2.68333 16.95 4.05C18.3167 5.4 19 7.05 19 9C19 10.5167 18.7083 11.7833 18.125 12.8C17.5583 13.8 16.9 14.7917 16.15 15.775C15.25 16.975 14.5667 17.975 14.1 18.775C13.65 19.5583 13.275 20.3917 12.975 21.275C12.8917 21.5083 12.7583 21.6917 12.575 21.825C12.4083 21.9417 12.2167 22 12 22ZM12 11.5C12.7 11.5 13.2917 11.2583 13.775 10.775C14.2583 10.2917 14.5 9.7 14.5 9C14.5 8.3 14.2583 7.70833 13.775 7.225C13.2917 6.74167 12.7 6.5 12 6.5C11.3 6.5 10.7083 6.74167 10.225 7.225C9.74167 7.70833 9.5 8.3 9.5 9C9.5 9.7 9.74167 10.2917 10.225 10.775C10.7083 11.2583 11.3 11.5 12 11.5Z" fill="#FEF7FF"/>
+</svg>
+
+<p> View Map</p>
+    </div>
+    <div class="contact" onclick="window.open('https://wa.me/9361148071?text=Hi', '_blank')">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="call-icon" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+<p>Contact</p>
+    </div>
+</div>
+</div>
+<div class="card1 punjai2">
+  <span class="card1__title ">Punjai Pulliyamapatti</span>
+  <p class="card1__content">
+    Puliampatti </br> 
+    Nal road Coimbatore main road</br> Erode-Tamilnadu
+  </p>
+    <div class="map-contact">
+    <div class="map" onclick="window.open('/map/pulliyamapatti2', '_blank')"><svg width="24" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="map-icon">
+<path d="M12 22C11.7667 22 11.5667 21.9333 11.4 21.8C11.2333 21.6667 11.1083 21.4917 11.025 21.275C10.7083 20.3417 10.3083 19.4667 9.825 18.65C9.35833 17.8333 8.7 16.875 7.85 15.775C7 14.675 6.30833 13.625 5.775 12.625C5.25833 11.625 5 10.4167 5 9C5 7.05 5.675 5.4 7.025 4.05C8.39167 2.68333 10.05 2 12 2C13.95 2 15.6 2.68333 16.95 4.05C18.3167 5.4 19 7.05 19 9C19 10.5167 18.7083 11.7833 18.125 12.8C17.5583 13.8 16.9 14.7917 16.15 15.775C15.25 16.975 14.5667 17.975 14.1 18.775C13.65 19.5583 13.275 20.3917 12.975 21.275C12.8917 21.5083 12.7583 21.6917 12.575 21.825C12.4083 21.9417 12.2167 22 12 22ZM12 11.5C12.7 11.5 13.2917 11.2583 13.775 10.775C14.2583 10.2917 14.5 9.7 14.5 9C14.5 8.3 14.2583 7.70833 13.775 7.225C13.2917 6.74167 12.7 6.5 12 6.5C11.3 6.5 10.7083 6.74167 10.225 7.225C9.74167 7.70833 9.5 8.3 9.5 9C9.5 9.7 9.74167 10.2917 10.225 10.775C10.7083 11.2583 11.3 11.5 12 11.5Z" fill="#FEF7FF"/>
+</svg>
+
+<p> View Map</p>
+    </div>
+    <div class="contact" onclick="window.open('https://wa.me/9361148071?text=Hi', '_blank')">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="call-icon" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+<p>Contact</p>
+    </div>
+</div>
+</div>
+<div class="card1 annur">
+  <span class="card1__title ">Annur Mettupalayam</span>
+  <p class="card1__content">
+    58/3A Annur Village </br> 
+    Sathy road Annur</br> Coimbatore-Tamilnadu
+  </p>
+    <div class="map-contact">
+    <div class="map" onclick="window.open('/map/annur', '_blank')"><svg width="24" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="map-icon">
+<path d="M12 22C11.7667 22 11.5667 21.9333 11.4 21.8C11.2333 21.6667 11.1083 21.4917 11.025 21.275C10.7083 20.3417 10.3083 19.4667 9.825 18.65C9.35833 17.8333 8.7 16.875 7.85 15.775C7 14.675 6.30833 13.625 5.775 12.625C5.25833 11.625 5 10.4167 5 9C5 7.05 5.675 5.4 7.025 4.05C8.39167 2.68333 10.05 2 12 2C13.95 2 15.6 2.68333 16.95 4.05C18.3167 5.4 19 7.05 19 9C19 10.5167 18.7083 11.7833 18.125 12.8C17.5583 13.8 16.9 14.7917 16.15 15.775C15.25 16.975 14.5667 17.975 14.1 18.775C13.65 19.5583 13.275 20.3917 12.975 21.275C12.8917 21.5083 12.7583 21.6917 12.575 21.825C12.4083 21.9417 12.2167 22 12 22ZM12 11.5C12.7 11.5 13.2917 11.2583 13.775 10.775C14.2583 10.2917 14.5 9.7 14.5 9C14.5 8.3 14.2583 7.70833 13.775 7.225C13.2917 6.74167 12.7 6.5 12 6.5C11.3 6.5 10.7083 6.74167 10.225 7.225C9.74167 7.70833 9.5 8.3 9.5 9C9.5 9.7 9.74167 10.2917 10.225 10.775C10.7083 11.2583 11.3 11.5 12 11.5Z" fill="#FEF7FF"/>
+</svg>
+
+<p> View Map</p>
+    </div>
+    <div class="contact" onclick="window.open('https://wa.me/9361148071?text=Hi', '_blank')">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="call-icon" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+<p>Contact</p>
+    </div>
+</div>
+</div>
+<!-- ===== Footer Start ===== -->
+<footer class="footer" id="footer">
+  <div class="footer-container">
+    
+    <!-- Logo -->
+    <div class="footer-logo">
+    </div>
+    
+    <!-- Footer Links -->
+    <div class="footer-links">
+      
+      <div class="footer-column">
+        <h3>Branches</h3>
+        <ul>
+          <li>Coimbatore</li>
+          <li>Thirunelveli</li>
+          <li>Sathiyamangalam</li>
+          <li>Thirupathi</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Categories</h3>
+        <ul>
+          <li onclick="window.location.href='/sweets'"><a>Sweet</a></li>
+          <li onclick="window.location.href='/cakes'"><a>Cakes</a></li>
+          <li onclick="window.location.href='/savouries'"><a>Savouries</a></li>
+          <li onclick="window.location.href='/chips'"><a>Chips</a></li>
+          <li onclick="window.location.href='/cookies'"><a>Cookies</a></li>
+          <li onclick="window.location.href='/bun'"><a>Bun</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Phone: +91 9876543210</li>
+          <li>Email: info@kmsfoods.com</li>
+          <li>Address: Coimbatore, TN</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+<!-- ===== Footer End ===== -->
+<script src="script.js"></script>
+</body>
+</html>

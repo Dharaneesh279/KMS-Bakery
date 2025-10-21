@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMS BAKERY</title>
+    <link rel="stylesheet" href="cookies.css">
+    <link rel="shortcut icon" href="../Images/KMS Bakery LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="rectangle"></div>
+    <div class="logo-pc"></div>
+    <!-- Desktop Navbar -->
+    <div class="desktop-navbar">
+  <button onclick="location.href='/'">HOME</button>
+
+  <div class="dropdown">
+    <button class="dropbtn">MENU</button>
+    <div class="dropdown-content">
+      <a href="/cakes">CAKES</a>
+      <a href="/cookies">COOKIES</a>
+      <a href="/bun">BUN</a>
+      <a href="/savouries">SAVOURIES</a>
+      <a href="/chips">CHIPS</a>
+      <a href="/sweets">SWEETS</a>
+    </div>
+  </div>
+
+  <button onclick="location.href='/branches'">BRANCHES</button>
+  <button type="button" class="contact">CONTACT</button>
+  <script>
+  document.querySelector('.contact').addEventListener('click', () => {
+    const footer = document.querySelector('.footer');
+    if (footer) {
+      footer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+</script>
+</div>
+    <!-- Overlay -->
+<div onclick="closeMobMenuToggle()" id="mobMenuCont" class="mob-menu-container">
+  <img class="close-img" src="https://raw.githubusercontent.com/arravind-r/Responsive-HTML5-Navigation-Menu/main/src/close.png" alt="close-icon" />
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobMenuWrap" class="mob-menu-wrap">
+  <div class="menu-content">
+    <div class="menu-items">
+      <ul class="nav-menu">
+        <li><a href="/">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="dropdown-mb">
+          <button class="dropbtn-mb" style="color: black;">MENU</button>
+          <div class="dropdown-mb-content">
+            <a href="/cakes">CAKES</a>
+            <a href="/cookies">COOKIES</a>
+            <a href="/bun">BUN</a>
+            <a href="/savouries">SAVOURIES</a>
+            <a href="/chips">CHIPS</a>
+            <a href="/sweets">SWEETS</a>
+          </div>
+        </li>
+
+        <li><a href="/branches">BRANCHES</a></li>
+        <li><a href="" id="contact" onclick="closeMobMenuToggle()">CONTACT</a></li>
+        <script>
+        document.querySelector('#contact').addEventListener('click', () => {
+          const footer = document.querySelector('.footer');
+          if (footer) {
+            footer.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+        </script>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="mobile-menu">
+  <img src="../Images/KMS Bakery LOGO.png" style="max-width:100px; max-height:100px;" class="logo-mb">
+  <button onclick="mobMenuToggle()" class="menu"><svg width="45px" height="70px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg></button>
+</div>
+
+<script>
+var mobMenuContainer = document.getElementById("mobMenuCont");
+var mobMenuWrap = document.getElementById("mobMenuWrap");
+
+function mobMenuToggle() {    
+    mobMenuContainer.classList.add("displayon");
+    mobMenuWrap.classList.add("displayon");
+    setTimeout(() => {
+        mobMenuWrap.classList.add("active");
+    }, 10);
+}
+
+function closeMobMenuToggle() {
+    mobMenuWrap.classList.remove("active");
+    setTimeout(() => {
+        mobMenuContainer.classList.remove("displayon");
+        mobMenuWrap.classList.remove("displayon");
+    }, 300);
+}
+document.querySelectorAll('.dropbtn-mb').forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.parentElement.classList.toggle('active');
+  });
+});
+</script>
+
+<div class="cookies-title">
+    <h1 class="cookies">COOKIES</h1>
+</div>
+<div class="cookies-logo"><img src="../Images/Cookies-img-Photoroom.png"></div>
+
+<div class="parent-1">
+    <div class="card1 card">
+        <div class="foot"><p>SALT BISCUIT</p> </div>
+    </div>
+    <div class="card2 card">
+        <div class="foot"><p>COCONUT BISCUIT</p></div>
+    </div>
+    <div class="card3 card">
+        <div class="foot"><p>RAGGI BISCUIT</p></div>
+    </div>
+</div>
+<div class="parent-2">
+    <div class="card4 card">
+        <div class="foot"><p>CHOCOLATE BISCUIT</p></div>
+    </div>
+    <div class="card5 card">
+        <div class="foot"><p>YELLOW BISCUIT</p></div>
+    </div>
+    <div class="card6 card">
+        <div class="foot"><p>CHEESE BISCUIT</p></div>
+    </div>
+</div>
+<div class="parent-3">
+    <div class="card7 card">
+        <div class="foot"><p>CASHEW BISCUIT</p></div>
+    </div>
+    <div class="card8 card">
+        <div class="foot"><p>JAM BISCUIT</p></div>
+    </div>
+    <div class="card9 card">
+        <div class="foot"><p>ROSE COCONUT BISCUIT</p></div>
+    </div>
+</div>
+
+<div class="bun-title">
+    <h1 class="bun" id="bun">BUN</h1>
+</div>
+<div class="bun-logo"><img src="../Images/Sweets-img-Photoroom.png"></div>
+
+<div class="parent-4">
+    <div class="card10 card">
+        <div class="foot"><p>BREAD</p> </div>
+    </div>
+    <div class="card11 card">
+        <div class="foot"><p>JAM BUN</p></div>
+    </div>
+    <div class="card12 card">
+        <div class="foot"><p>JAM ROLL</p></div>
+    </div>
+</div>
+
+<!-- ===== Footer Start ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Logo -->
+    <div class="footer-logo">
+    </div>
+    
+    <!-- Footer Links -->
+    <div class="footer-links">
+      
+      <div class="footer-column">
+        <h3>Branches</h3>
+        <ul>
+          <li>Coimbatore</li>
+          <li>Thirunelveli</li>
+          <li>Sathiyamangalam</li>
+          <li>Thirupathi</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Categories</h3>
+        <ul>
+          <li onclick="window.location.href='/sweets'"><a>Sweet</a></li>
+          <li onclick="window.location.href='/cakes'"><a>Cakes</a></li>
+          <li onclick="window.location.href='/savouries'"><a>Savouries</a></li>
+          <li onclick="window.location.href='/chips'"><a>Chips</a></li>
+          <li onclick="window.location.href='/cookies'"><a>Cookies</a></li>
+          <li onclick="window.location.href='/bun'"><a>Bun</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Phone: +91 9876543210</li>
+          <li>Email: info@kmsfoods.com</li>
+          <li>Address: Coimbatore, TN</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+<!-- ===== Footer End ===== -->
+<script src="script.js"></script>
+</body>
+</html>
