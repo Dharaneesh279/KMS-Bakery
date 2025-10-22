@@ -38,14 +38,16 @@ body{
 }
 .logo-pc{
     position: relative;
-    height: 152px;
-    width: 152px;
-    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    height: 145px;
+    width: 145px;
+    background-image: url(./Images-new/KMS_LOGO.png) ;
     background-repeat: no-repeat;
     background-size: contain;
-    left:44.5%;
+    left:43.5%;
     top:25px;
-    zoom:88%;
+    zoom:85%;
+    border: 15px solid #462A11;
+    border-radius: 50%;
 }
 
 .desktop-navbar{
@@ -226,7 +228,7 @@ button{
   background-color: #EFE2B9;
   position: relative;
   background-size: 60%;
-  background-position: center -50px;
+  background-size: cover;
 }
 .card {
   position: relative;
@@ -251,6 +253,109 @@ button{
   transform: scale(1.03);
   box-shadow: 0 0 25px rgba(124, 54, 0, 0.683);
 }
+
+.card1 {
+    background: url(./Images-new/mixture.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card2 {
+    background: url(./Images-new/bombay\ mixture.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card3 {
+    background: url(./Images-new/Thatta-murukku.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card4 {
+    background: url(./Images-new/Ullu-mixture.JPG) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card5 {
+    background: url(./Images-new/Pudina-mixture.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card6 {
+    background: url(./Images-new/ola-pakoda.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card7 {
+    background: url(./Images-new/Milagu-Sevu.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card8 {
+    background: url(./Images-new/Pudhina-muruku.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card9 {
+    background: url(./Images-new/Masala-kadalai.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card10 {
+    background: url(./Images-new/Kaarabondhi.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card11 {
+    background: url(./Images-new/raagi-thattu-vadai.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+    background-position: center 0px;
+}
+.card12 {
+    background: url(./Images-new/pepper-potato-chips.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card13 {
+    background: url(./Images-new/Spice-potato-chips.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card14 {
+    background: url(./Images-new/appalam.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card15 {
+    background: url(./Images-new/koduval.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card16 {
+    background: url(./Images-new/wheel-chips.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card17 {
+    background: url(./Images-new/Onion-chips.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card18 {
+    background: url(./Images-new/maravalli-chips.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card19 {
+    background: url(./Images-new/banana-chips.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card20 {
+    background: url(./Images-new/pudhina-chips.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+
 /* Foot styling */
 .foot {
   position: relative;
@@ -268,11 +373,7 @@ button{
   margin: 15px;
   padding: 0;
 }
-.card1 {
-  background: url(../Images/special_laddu.webp) no-repeat center;
-  background-size: 100%;
-  background-position: 0.1px -44px;
-}
+
 
 .card2, .card5, .card8 , .card13, .card16 , .card19 {
   position: relative;
@@ -404,7 +505,7 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:240px;
-    background-position: center -50px;
+    background-size: cover;
   }
   
   .navbar {
@@ -644,7 +745,7 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .navbar {
     top:35%;
@@ -716,7 +817,7 @@ button{
     min-width: 170px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .card19{
     margin-bottom: 100px;
@@ -762,6 +863,7 @@ button{
     min-width: 150px;
     height: auto;  
     gap:3em;
+    background-size: cover;
   }
   .card2, .card5, .card8 , .card13, .card16 , .card19 {
   position: relative;

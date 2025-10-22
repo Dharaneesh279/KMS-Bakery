@@ -38,14 +38,16 @@ body{
 }
 .logo-pc{
     position: relative;
-    height: 152px;
-    width: 152px;
-    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    height: 145px;
+    width: 145px;
+    background-image: url(./Images-new/KMS_LOGO.png) ;
     background-repeat: no-repeat;
     background-size: contain;
-    left:44.5%;
+    left:43.5%;
     top:25px;
-    zoom:88%;
+    zoom:85%;
+    border: 15px solid #462A11;
+    border-radius: 50%;
 }
 
 .desktop-navbar{
@@ -193,7 +195,6 @@ button{
   background-color: #EFE2B9;
   position: relative;
   background-size: 60%;
-  background-position: center -50px;
 }
 .card {
   position: relative;
@@ -218,6 +219,85 @@ button{
   transform: scale(1.03);
   box-shadow: 0 0 25px rgba(124, 54, 0, 0.683);
 }
+.card1 {
+    background: url(./Images-new/Laddoo.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+    background-position: center -40px;
+}
+.card2 {
+    background: url(./Images-new/Dates-laddoo.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card3 {
+    background: url(./Images-new/big-laddoo.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+    background-position: center -30px;
+}
+.card4 {
+    background: url(./Images-new/Laddoo-mysorepak.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card5 {
+    background: url(./Images-new/carrot-mysorepak.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card6 {
+    background: url(./Images-new/ghee-mysorepak.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card7 {
+    background: url(./Images-new/gulab-jammun.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card8 {
+    background: url(./Images-new/apple-cake.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card9 {
+    background: url(./Images-new/milk-sweet.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card10 {
+    background: url(./Images-new/Nattu-Chakkara-Halwa.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card11 {
+    background: url(./Images-new/green-burfi.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card12 {
+    background: url(./Images-new/Jalebi.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card13 {
+    background: url(./Images-new/boost-burfi.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card14 {
+    background: url(./Images-new/Horlicks-burfi.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+    background-position: center -20px;
+}
+.card15 {
+    background: url(./Images-new/Cashew-burfi.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+
 .card10 .foot{
   font-size: 1.4em;
 }
@@ -238,11 +318,6 @@ button{
 .foot p {
   margin: 15px;
   padding: 0;
-}
-.card1 {
-  background: url(../Images/special_laddu.webp) no-repeat center;
-  background-size: 100%;
-  background-position: 0.1px -44px;
 }
 .card2, .card5, .card8, .card11, .card14 {
   position: relative;
@@ -371,7 +446,7 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:240px;
-    background-position: center -50px;
+    background-size: cover;
   }
   
   .navbar {
@@ -607,7 +682,7 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .navbar {
     top:35%;
@@ -672,7 +747,7 @@ button{
     min-width: 170px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .card14{
     margin-bottom: 100px;

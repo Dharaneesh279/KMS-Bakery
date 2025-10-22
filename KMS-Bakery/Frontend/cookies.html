@@ -20,9 +20,9 @@
     <div class="dropdown-content">
       <a href="/cakes">CAKES</a>
       <a href="/cookies">COOKIES</a>
-      <a href="/bun">BUN</a>
+      <a class="bun-menu">BUN</a>
       <a href="/savouries">SAVOURIES</a>
-      <a href="/chips">CHIPS</a>
+      <a href="/savouries#chips">CHIPS</a>
       <a href="/sweets">SWEETS</a>
     </div>
   </div>
@@ -32,6 +32,17 @@
   <script>
   document.querySelector('.contact').addEventListener('click', () => {
     const footer = document.querySelector('.footer');
+    if (footer) {
+      footer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+</script>
+<script>
+  document.querySelector('.bun-menu').addEventListener('click', () => {
+    const footer = document.querySelector('.bun');
     if (footer) {
       footer.scrollIntoView({
         behavior: 'smooth',
@@ -59,18 +70,29 @@
           <div class="dropdown-mb-content">
             <a href="/cakes">CAKES</a>
             <a href="/cookies">COOKIES</a>
-            <a href="/bun">BUN</a>
+            <a class="bun-menu-mb" onclick="closeMobMenuToggle()">BUN</a>
             <a href="/savouries">SAVOURIES</a>
-            <a href="/chips">CHIPS</a>
+            <a href="/savouries#chips">CHIPS</a>
             <a href="/sweets">SWEETS</a>
           </div>
         </li>
 
         <li><a href="/branches">BRANCHES</a></li>
-        <li><a href="" id="contact" onclick="closeMobMenuToggle()">CONTACT</a></li>
+        <li><a id="contact" onclick="closeMobMenuToggle()">CONTACT</a></li>
         <script>
         document.querySelector('#contact').addEventListener('click', () => {
           const footer = document.querySelector('.footer');
+          if (footer) {
+            footer.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+        </script>
+        <script>
+        document.querySelector('.bun-menu-mb').addEventListener('click', () => {
+          const footer = document.querySelector('.bun');
           if (footer) {
             footer.scrollIntoView({
               behavior: 'smooth',
@@ -137,7 +159,7 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
         <div class="foot"><p>CHOCOLATE BISCUIT</p></div>
     </div>
     <div class="card5 card">
-        <div class="foot"><p>YELLOW BISCUIT</p></div>
+        <div class="foot"><p>YELLOW EGG BISCUIT</p></div>
     </div>
     <div class="card6 card">
         <div class="foot"><p>CHEESE BISCUIT</p></div>
@@ -228,5 +250,25 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
 </footer>
 <!-- ===== Footer End ===== -->
 <script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash;
+
+  if (hash) {
+    history.replaceState(null, null, window.location.pathname);
+    setTimeout(() => {
+      const target = document.querySelector(hash);
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        history.pushState(null, null, hash);
+      }
+    }, 500);
+  }
+});
+</script>
 </body>
 </html>

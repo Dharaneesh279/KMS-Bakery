@@ -38,14 +38,16 @@ body{
 }
 .logo-pc{
     position: relative;
-    height: 152px;
-    width: 152px;
-    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    height: 145px;
+    width: 145px;
+    background-image: url(./Images-new/KMS_LOGO.png) ;
     background-repeat: no-repeat;
     background-size: contain;
-    left:44.5%;
+    left:43.5%;
     top:25px;
-    zoom:88%;
+    zoom:85%;
+    border: 15px solid #462A11;
+    border-radius: 50%;
 }
 
 .desktop-navbar{
@@ -252,11 +254,65 @@ button{
 }
 
 .card1 {
+    background: url(./Images-new/salt-biscuit.jpeg) no-repeat center;
     background-color: #EFE2B9;
-    background-size: 60%;
-    background-position: 55px -85px;
+    background-size: cover;
 }
-
+.card2 {
+    background: url(./Images-new/Coconut-biscuit.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card3 {
+    background: url(./Images-new/Raggi-biscuit1.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card4 {
+    background: url(./Images-new/chocolate-cookies.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card5 {
+    background: url(./Images-new/Yellow-Egg-biscuit.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card6 {
+    background: url(./Images-new/Cheese-biscuit.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card7 {
+    background: url(./Images-new/Cashew-biscuits.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card8 {
+    background: url(./Images-new/Jam-biscuit.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card9 {
+    background: url(./Images-new/Rose-coconut-biscuits.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card10 {
+    background: url(./Images-new/Bread.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card11 {
+    background: url(./Images-new/jan-bun1.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card12 {
+    background: url(./Images-new/jam-roll.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
 .card2 , .card5,.card8, .card11{
   position: relative;
   top:200px;
@@ -399,7 +455,7 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:240px;
-    background-position: center -50px;
+    background-size: cover;
   }
   
   .navbar {
@@ -644,7 +700,7 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .navbar {
     top:35%;
@@ -709,7 +765,7 @@ button{
     min-width: 170px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .card11{
     margin-bottom: 100px;
@@ -763,6 +819,7 @@ button{
     min-width: 150px;
     height: auto;  
     gap:3em;
+    background-size: cover;
   }
   .card2 , .card5,.card8, .card11{
   position: relative;

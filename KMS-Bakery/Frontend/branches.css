@@ -50,14 +50,16 @@ body{
 }
 .logo-pc{
     position: relative;
-    height: 152px;
-    width: 152px;
-    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    height: 145px;
+    width: 145px;
+    background-image: url(./Images-new/KMS_LOGO.png) ;
     background-repeat: no-repeat;
     background-size: contain;
-    left:44.5%;
+    left:43.5%;
     top:25px;
-    zoom:88%;
+    zoom:85%;
+    border: 15px solid #462A11;
+    border-radius: 50%;
 }
 
 .desktop-navbar{

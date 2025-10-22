@@ -20,9 +20,9 @@
     <div class="dropdown-content">
       <a href="/cakes">CAKES</a>
       <a href="/cookies">COOKIES</a>
-      <a href="/bun">BUN</a>
+      <a href="/cookies#bun">BUN</a>
       <a href="/savouries">SAVOURIES</a>
-      <a href="/chips">CHIPS</a>
+      <a class="chips-menu">CHIPS</a>
       <a href="/sweets">SWEETS</a>
     </div>
   </div>
@@ -32,6 +32,17 @@
   <script>
   document.querySelector('.contact').addEventListener('click', () => {
     const footer = document.querySelector('.footer');
+    if (footer) {
+      footer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+</script>
+ <script>
+  document.querySelector('.chips-menu').addEventListener('click', () => {
+    const footer = document.querySelector('.chips');
     if (footer) {
       footer.scrollIntoView({
         behavior: 'smooth',
@@ -59,9 +70,9 @@
           <div class="dropdown-mb-content">
             <a href="/cakes">CAKES</a>
             <a href="/cookies">COOKIES</a>
-            <a href="/cookies">BUN</a>
+            <a href="/cookies#bun">BUN</a>
             <a href="/savouries">SAVOURIES</a>
-            <a href="/chips">CHIPS</a>
+            <a class="chips-menu-mb" onclick="closeMobMenuToggle()" >CHIPS</a>
             <a href="/sweets">SWEETS</a>
           </div>
         </li>
@@ -71,6 +82,17 @@
         <script>
         document.querySelector('#contact').addEventListener('click', () => {
           const footer = document.querySelector('.footer');
+          if (footer) {
+            footer.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+        </script>
+        <script>
+        document.querySelector('.chips-menu-mb').addEventListener('click', () => {
+          const footer = document.querySelector('.chips');
           if (footer) {
             footer.scrollIntoView({
               behavior: 'smooth',
@@ -124,21 +146,21 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
 
 <div class="parent-1">
     <div class="card1 card">
-        <div class="foot"><p>MICHAR</p> </div>
+        <div class="foot"><p>MIXTURE</p> </div>
     </div>
     <div class="card2 card">
-        <div class="foot"><p>BOMBAY MICHAR</p></div>
+        <div class="foot"><p>BOMBAY MIXTURE</p></div>
     </div>
     <div class="card3 card">
-        <div class="foot"><p>THATTU MICHAR</p></div>
+        <div class="foot"><p>THATTU MURUKKU</p></div>
     </div>
 </div>
 <div class="parent-2">
     <div class="card4 card">
-        <div class="foot"><p>ULLU MICHAR</p></div>
+        <div class="foot"><p>ULLU MIXTURE</p></div>
     </div>
     <div class="card5 card">
-        <div class="foot"><p>PUDHINA MICHAR</p></div>
+        <div class="foot"><p>PUDHINA MIXTURE</p></div>
     </div>
     <div class="card6 card">
         <div class="foot"><p>OLA PALKODA</p></div>
@@ -152,7 +174,7 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
         <div class="foot"><p>PUDHINA MURUKKU</p></div>
     </div>
     <div class="card9 card">
-        <div class="foot"><p>MORAL KUDALA</p></div>
+        <div class="foot"><p>MASALA KADALA</p></div>
     </div>
 </div>
 <div class="parent-4">
@@ -164,7 +186,7 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
     </div>
 </div>
 <div class="chips-title">
-    <h1 class="chips">CHIPS</h1>
+    <h1 class="chips" id="chips">CHIPS</h1>
 </div>
 <div class="chips-logo"><img src="../Images/chips-Photoroom.png"></div>
 
@@ -181,7 +203,7 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
 </div>
 <div class="parent-6">
     <div class="card15 card">
-        <div class="foot"><p>KODUL</p></div>
+        <div class="foot"><p>KODUVAL</p></div>
     </div>
     <div class="card16 card">
         <div class="foot"><p>WHEEL CHIPS</p></div>
@@ -192,7 +214,7 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
 </div>
 <div class="parent-7">
     <div class="card18 card">
-        <div class="foot"><p>MARANALLU CHIPS</p></div>
+        <div class="foot"><p>MARAVALLI CHIPS</p></div>
     </div>
     <div class="card19 card">
         <div class="foot"><p>NENDHARA CHIPS</p></div>
@@ -259,5 +281,25 @@ document.querySelectorAll('.dropbtn-mb').forEach(btn => {
 <!-- ===== Footer End ===== -->
 
 <script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash;
+
+  if (hash) {
+    history.replaceState(null, null, window.location.pathname);
+    setTimeout(() => {
+      const target = document.querySelector(hash);
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        history.pushState(null, null, hash);
+      }
+    }, 500);
+  }
+});
+</script>
+
 </body>
 </html>

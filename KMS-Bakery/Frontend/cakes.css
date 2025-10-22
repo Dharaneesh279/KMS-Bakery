@@ -37,14 +37,16 @@ body{
 
 .logo-pc{
     position: relative;
-    height: 152px;
-    width: 152px;
-    background-image: url(../Images/KMS\ Bakery\ LOGO.png) ;
+    height: 145px;
+    width: 145px;
+    background-image: url(./Images-new/KMS_LOGO.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    left:44.5%;
+    left:43.5%;
     top:25px;
-    zoom:88%;
+    zoom:85%;
+    border: 15px solid #462A11;
+    border-radius: 50%;
 }
 
 .desktop-navbar{
@@ -224,12 +226,53 @@ button{
 }
 
 .card1 {
-    background: url(../Images/Black\ forest.png) no-repeat center;
+    background: url(./Images-new/Black-forest.jpeg) no-repeat center;
     background-color: #EFE2B9;
-    background-size: 60%;
-    background-position: 55px -85px;
+    background-size: cover;
 }
+.card2 {
+    background: url(./Images-new/Red\ Velvet\ Cake.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+    background-position: center -16px;
+}
+.card3 {
+    background: url(./Images-new/White\ Forest\ Cake.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card4 {
+    background: url(./Images-new/Strawberry-Cake.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card5 {
+    background: url(./Images-new/Chocolate-Cake.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
 
+}
+.card6 {
+    background: url(./Images-new/Vanilla-Cake.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card7 {
+    background: url(./Images-new/Brownies.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+    background-position: center -30px;
+}
+.card8 {
+    background: url(./Images-new/honey-cake.jpg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
+.card9 {
+    background: url(./Images-new/Tea-Cake.jpeg) no-repeat center;
+    background-color: #EFE2B9;
+    background-size: cover;
+}
 .card2 , .card5,.card8{
   position: relative;
   top:200px;
@@ -373,9 +416,8 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:240px;
-    background-position: center -50px;
+    background-size: cover;
   }
-  
   .navbar {
     top:35%;
     font-size: 1.8vw; 
@@ -386,14 +428,12 @@ button{
     display: flex;
     text-decoration: none;
     color: #E2C8B0;
-}
-
+ }
   .cakes-title {
     font-size: 22px;
     width: 30%;
     height:65px;
   }
-
   .cakes-logo {
     transform: translate(-45%,-105%);
     height: 120px;
@@ -620,7 +660,7 @@ button{
     min-width: 180px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .navbar {
     top:35%;
@@ -682,7 +722,7 @@ button{
     min-width: 170px;
     background-size: 65%;
     max-height:210px;
-    background-position: center -50px;
+    background-size: cover;
   }
   .card8{
     margin-bottom: 100px;
