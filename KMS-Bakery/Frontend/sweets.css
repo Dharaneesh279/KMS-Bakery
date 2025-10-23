@@ -406,6 +406,9 @@ button{
 .footer-column ul li a:hover {
   color: #f0c674;
 }
+.footer-column ul li:hover {
+  color: #f0c674;
+}
 
 /* ========== PC Screen > 1080px ========== */
 @media (min-width: 1081px) {
