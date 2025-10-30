@@ -624,6 +624,12 @@ button{
     height: 500px;
     padding: 30px 20px;
   }
+  .footer-column ul li {
+    font-family: 'Helvetica Oblique', sans-serif;
+  }
+  .footer-column ul li a {
+    font-family: 'Helvetica Oblique', sans-serif;
+  }
 }
 /* for medium screens */
 @media (min-width:550px) and (max-width:610px){

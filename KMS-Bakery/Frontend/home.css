@@ -990,7 +990,7 @@ button {
     .others {
         font-size: 4rem;
     }
-       .rectangle2 {
+    .rectangle2 {
         height: 17em;
     }
     .square {
@@ -1015,6 +1015,12 @@ button {
     .footer {
         height: 500px;
         padding: 30px 20px;
+    }
+    .footer-column ul li {
+        font-family: 'Helvetica Oblique', sans-serif;
+    }
+    .footer-column ul li a {
+        font-family: 'Helvetica Oblique', sans-serif;
     }
 }
 
@@ -1143,6 +1149,7 @@ button {
     .footer {
         margin-top: 40%;
         width: 100vw;
+        height:max-content;
     }
     .footer-logo {
         width: 150px;
