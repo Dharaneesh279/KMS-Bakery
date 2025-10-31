@@ -16,7 +16,7 @@
 }
 @font-face {
     font-family: 'Kenyan Coffee Rg';
-    src: url(../fonts/Kenyan\ Coffee/Kenyan\ Coffee\ Rg.ttf);
+    src: url("./fonts/Kenyan Coffee/kenyan\ coffee\ rg.ttf");
     font-weight: 400;
 }
 body {

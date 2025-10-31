@@ -174,7 +174,7 @@ button{
   height:325px;
   padding: 20px;
   background: #EFE2B9;
-  transition: transform .3s;
+  transition: transform 0.3s;
   border-radius: 18px ;
   margin-left: 3.4%;
   margin-bottom: 8%;
@@ -651,7 +651,6 @@ button{
   }
   .footer {
     margin-top:40%;
-    width: 100vm;
     height: max-content;
   }
   .footer-logo {
@@ -677,9 +676,6 @@ button{
     width:75px;
     height:75px;
   }
-  .mobile-menu{
-    width: 90%;
-  }
   .menu-items ul li a{
     font-size: 0.9em;
   }
@@ -693,9 +689,11 @@ button{
   }
   .card1{
     height: fit-content;
+    padding:15px;
+    margin-left: 3%;
   }
   .card1__title{
-    font-size: 2.2em;
+    font-size: 2em;
   }
   .card1__content{
     font-size:1.3em;
@@ -709,8 +707,7 @@ button{
   
   .footer {
     margin-top:40%;
-    width: 93%;
-    height: 120%;
+    height: max-content;
   }
   .footer-logo {
   width: 100px;;  
@@ -722,13 +719,28 @@ button{
   border-radius: 50%;
 }
 }
-
-@media(max-width: 350px){
+@media(max-width: 400px){
   .card1__title{
-    font-size: 2em;
+    font-size: 1.6em;
   }
   .card1__content{
     font-size:1em;
+  }
+  .map , .contact{
+    font-size: 1rem;
+  }
+}
+@media(max-width: 350px){
+  .card1{
+    height: fit-content;
+    padding:15px;
+    margin-left: 1.5%;
+  }
+  .card1__title{
+    font-size: 1.5em;
+  }
+  .card1__content{
+    font-size:0.9em;
   }
   .map , .contact{
     font-size: 0.9rem;
